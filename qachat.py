@@ -7,7 +7,7 @@ import google.generativeai as genai
 
 genai.configure(api_key=os.getenv("Google_Api_Key"))
 
-## function to load gemini pro model and get response
+## function to load gemini-2.0-flash model and get response
 
 model= genai.GenerativeModel("gemini-2.0-flash")
 chat= model.start_chat(history=[])
